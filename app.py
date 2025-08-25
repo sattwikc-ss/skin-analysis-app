@@ -106,7 +106,7 @@ def init_db():                                 ##db initialization
     conn.close()
 
 # Load the model safely
-model = load_model("skin_disease_model.keras", compile=False, safe_mode=False)
+model = load_model("skin_disease_model.h5", compile=False)
 
 
 
