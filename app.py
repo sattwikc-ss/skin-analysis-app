@@ -105,8 +105,9 @@ def init_db():                                 ##db initialization
     conn.commit()
     conn.close()
 
-# Load the model
-model = load_model("skin_disease_model.h5")
+# Load the model safely
+model = load_model("skin_disease_model.h5", compile=False)
+
 
 class_names = ["Actinic keratosis", "Atopic Dermatitis", "Benign keratosis", "Dermatofibroma",
                "Melanocytic nevus", "Melanoma", "Squamous cell carcinoma",
