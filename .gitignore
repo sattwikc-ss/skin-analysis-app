@@ -1,0 +1,12 @@
+# Ignore dataset folder
+skin_disease_dataset/
+
+# Ignore Jupyter notebook
+SAM_SKIN_DN121.ipynb
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore uploaded images (they don’t need to go to GitHub)
+static/uploads/*
